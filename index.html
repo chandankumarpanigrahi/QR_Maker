@@ -12,7 +12,7 @@
 
 <body>
     <div class="mainBody">
-        <div class="container body">
+        <div class="container">
             <h1 class="mainHeading">QR Code Generator</h1>
             <div class="row mt-5">
                 <div class="col-md-6">
@@ -25,11 +25,11 @@
                             <input class="form_input" type="text" id="qr_data" name="qr_data"
                                 placeholder="Enter QR Name" required />
                         </form>
-                        <div class="w-100 d-flex">
-                            <button class="btn custom_btn me-2 w-100" type="button" onclick="generateQRCode()">Generate
+                        <div class="w-100 d-flex genBtns">
+                            <button class="btn custom_btn me-2 mb-3 w-100" type="button" onclick="generateQRCode()">Generate
                                 QR
                                 Code</button>
-                            <button class="btn custom_btn" type="button" onclick="resetForm()">Reset</button>
+                            <button class="btn custom_btn mb-3" type="button" onclick="resetForm()">Reset</button>
                         </div>
                     </div>
                 </div>
@@ -48,13 +48,28 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="container">
+                <p>Made by <a href="https://github.com/chandankumarpanigrahi">Chandan Kumar Panigrahi</a></p>
+                <p class="ms-auto">All rights reserved @ 2024</p>
+                <p class="ms-3"><a href="https://digitalcheatsheet.netlify.app/">Click for More</a></p>
+            </div>
+        </footer>
     </div>
-
     <script src="./assets/script.js"></script>
     <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <!-- Prevent Keyboard and Mouse Actions -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+    <script>
+        $(function () { $(this).bind("contextmenu", function (e) { e.preventDefault(); }); });
+        document.onkeydown = function (e) {
+            if (e.ctrlKey) {
+                return false;
+            }
+        };
+    </script> -->
 </body>
 
 </html>

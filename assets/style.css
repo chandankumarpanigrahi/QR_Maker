@@ -100,8 +100,8 @@ body {
 
 .wholeQr {
     display: block;
-    margin: 0 13%;
-    width: calc(300px + 35px);
+    margin: 0 auto;
+    width: 335px;
     text-align: center;
 }
 
@@ -197,4 +197,60 @@ label {
     color: #ffffffba;
     margin-left: 0.25rem;
     font-weight: 500;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #181729e0;
+}
+
+footer .container{
+    display: flex;
+}
+
+footer p{
+    margin: 0;
+    color: #bab3b399;
+    font-size: 0.8rem;
+}
+
+footer p a{
+    color: #ffffffbd;
+    text-decoration: none;
+}
+
+/* responsive */
+@media screen and (max-width: 530px) {
+    .genBtns{
+        flex-direction: column;
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .gen_form{
+        padding: 2rem;
+    margin: 5%;
+    }
+    
+    .wholeQr{
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .sampleQr{
+        width: 250px;
+        height: 250px;
+    }
+    .qrcode img{
+        width: 250px;
+    }
+    .wholeQr{
+        width: 285px;
+    }
 }
