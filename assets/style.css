@@ -89,7 +89,7 @@ body {
     color: white;
     border-top: 2px dashed #856cb3;
     padding: 8px;
-    text-transform: uppercase;
+    /* text-transform: capitalize; */
     background-color: #403e5da6;
 }
 
