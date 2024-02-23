@@ -16,4 +16,10 @@ Welcome to the QR Code Generator! This application is designed to provide a simp
 3. Click the 'Generate' button.
 4. After the QR code is generated, you can download it by clicking on the 'Download' button.
 
-This QR Code Generator is perfect for ease to use and with Simple UI.
+## Technologies Used
+
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+- QR Code Generator Library
